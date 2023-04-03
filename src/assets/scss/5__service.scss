@@ -1,0 +1,35 @@
+.service {
+    background-color: #d9d9d9;
+    padding: 30px 0;
+}
+.service__box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.service__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 30px 0 rgba(0,0,0,.05);
+}
+.service__imgW {
+}
+.service__img {
+    width: 84px;
+}
+.service__name {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+.service__txt {
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+    line-height: 30px;
+}

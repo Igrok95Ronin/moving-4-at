@@ -5,11 +5,14 @@
     display: grid;
     grid-template-columns: .8fr 1fr;
     gap: 20px;
+    box-shadow: 0 0 30px 0 rgba(0,0,0,.05);
+    padding: 30px 20px;
+    border-radius: 10px;
 }
 .commet__left {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 .commet__ul {
     font-size: 20px;
@@ -31,6 +34,7 @@
     }
 }
 .commet__messageWrap {
+    text-align: center;
 }
 .commet__message {
     background-color: $mainColor;
