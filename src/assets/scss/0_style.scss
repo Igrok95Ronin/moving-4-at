@@ -9,6 +9,11 @@ a{
     max-width: 1100px;
     margin: 0 auto;
 }
+.container2 {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0;
+}
 body{
     margin: auto;
     padding: 0;
@@ -17,6 +22,8 @@ body{
     min-width: 320px;
     color: #000;
 }
+
+$mainColor : #0097b2;
 
 @mixin btn {
 
