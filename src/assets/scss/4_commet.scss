@@ -1,0 +1,77 @@
+.commet {
+    margin: 50px 0;
+}
+.commet__box {
+    display: grid;
+    grid-template-columns: .8fr 1fr;
+    gap: 20px;
+}
+.commet__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.commet__ul {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    li{
+         position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            background-image: url(../img/mark.svg);
+            background-size: cover;
+            width: 20px;
+            height: 20px;
+            left: -30px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
+.commet__messageWrap {
+}
+.commet__message {
+    background-color: $mainColor;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: .3s;
+    &:hover {
+        color: #fff;
+        background-color: #048298;
+    }
+}
+
+.commet__right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #f4d4ae;
+    padding: 20px;
+    border-radius: 20px;
+    border-bottom: 5px solid #f09a53;
+    border-right: 10px solid #f09a53;
+}
+.commet__imgWrap {
+    max-width: 100%;
+    max-height: 100%;
+    border-right: 2px solid #f09a53;
+}
+.commet__img {
+    width: 145px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+.commet__star{
+    font-size: 30px;
+    letter-spacing: 5px;
+    color: #f09a53;
+}
+.commet__txt {
+    font-size: 25px;
+    margin-bottom: 0;
+}
