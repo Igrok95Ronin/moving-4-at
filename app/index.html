@@ -77,7 +77,7 @@ $title = $text . ' ' . $city;
                                     <li>Übersiedlung ohne Wartezeiten</li>
                                 </ul>
                                 <div class="commet__messageWrap">
-                                    <a href="#" class="commet__message">Jetzt anfrage senden</a>
+                                    <a href="#anchor" class="commet__message">Jetzt anfrage senden</a>
                                 </div>
                             </div>
                             <div class="commet__right">
@@ -140,7 +140,7 @@ $title = $text . ' ' . $city;
                                     <li>Erfahrung und Know-how</li>
                                 </ul>
                                 <div class="commet__messageWrap">
-                                    <a href="#" class="commet__message">Jetzt Termin vereinbaren</a>
+                                    <a href="#anchor" class="commet__message">Jetzt Termin vereinbaren</a>
                                 </div>
                             </div>
                         </div>
@@ -160,7 +160,6 @@ $title = $text . ' ' . $city;
                             <div class="professional__right">
                                 <p class="professional__txt">Unser Experten-Team hilft Ihnen bei jedem Schritt Ihres Umzugs - von Planung bis Transport. Kontaktieren Sie uns für ein maßgeschneidertes Angebot.</p>
                                 <div class="professional__inner">
-                                    <a class="professional__wLink" title="Whatsapp" href="whatsapp://send?phone=79270000000"><img class="professional__wImg" src="assets/img/wat.svg" alt="Написать в Whatsapp" /></a>
                                     <a class="professional__btn" href="#" ><span>111222333</span></a>
                                 </div>
                             </div>
@@ -169,12 +168,54 @@ $title = $text . ' ' . $city;
                 </div>
             </div>
         </section>
-
-
-        <section class='btnFixed'>
-            <div class='btnFixed__box'>
-                <a class="btnFixed__btn" href="#" ><span>111222333</span></a>
-            </div>
+        <section class='forms'>
+              <div class='container-fluid'>
+                 <div class='row'>
+                    <div class='col-12 container'>
+                       <div class='forms__box'>
+                        <div class="forms__w">
+                            <h2 class="forms__wTitle">Kostenberechnung per WhatsApp - Schnell und bequem</h2>
+                            <div class="forms__imgWrap">
+                             <a class="professional__wLink" title="Hier klicken" href="whatsapp://send?phone=79270000000"> <img class="forms__img" src="assets/img/WhatsApp.gif" alt="Hier klicken" ></a>
+                            </div>
+                        </div>
+                        <div class='forms__wrapper' id="anchor">
+                          <h2 class='forms__title'>Kontaktieren Sie uns:</h2>
+                          <form id='jq_form' class='mb-0 mt-3'>
+                             <div class='my-0'>
+                                <input class='form-control' placeholder='Name' name='jq_name' type='text'>
+                                <div id='jq_name' style='font-weight:700;font-size:15px;color:red;padding-top:2px;display:none'>Dies ist ein Pflichtfeld.</div>
+                             </div>
+                             <div class='my-4'>
+                                <input class='form-control' placeholder='Telefonnummer' name='jq_phone' type='text'>
+                                <div id='jq_phone' style='font-weight:700;font-size:15px;color:red;padding-top:2px;display:none'>Dies ist ein Pflichtfeld.</div>
+                             </div>
+                             <div class='my-4'>
+                                <input class='form-control' placeholder='Straße' name='jq_street' type='text'>
+                                <div id='jq_street' style='font-weight:700;font-size:15px;color:red;padding-top:2px;display:none'>Dies ist ein Pflichtfeld.</div>
+                             </div>
+                             <div class='my-4'>
+                                <input class='form-control' placeholder='Postleitzahl/Stadt' name='jq_city' type='text'>
+                                <div id='jq_city' style='font-weight:700;font-size:15px;color:red;padding-top:2px;display:none'>Dies ist ein Pflichtfeld.</div>
+                             </div>
+                             <div class='my-4'>
+                                <input class='form-control' placeholder='E-mail' name='jq_email' type='text'>
+                                <div id='jq_email' style='font-weight:700;font-size:15px;color:red;padding-top:2px;display:none'>Dies ist ein Pflichtfeld.</div>
+                             </div>
+                             <div class='my-4'>
+                                <textarea rows='3' class='form-control' name='jq_text' placeholder='Beschreibung'></textarea>
+                                <div id='jq_text' style='font-weight:700;font-size:15px;color:red;padding-top:2px;display:none'>Dies ist ein Pflichtfeld.</div>
+                             </div>
+                             <div>
+                                <input class='btn  text-uppercase fw-bold mb-0 px-3 py-2 forms__button' type='submit' id='jq_submit' value='Senden'>
+                             </div>
+                             <div id='jq_success' style='display:none'>Vielen Dank für Ihre Anfrage. Unsere Mitarbeiter werden sich in Kürze bei Ihnen melden.</div>
+                          </form>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+           </div>
         </section>
     </main>
     <!--Нижний колонтитул страницы-->
