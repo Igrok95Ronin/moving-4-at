@@ -28,10 +28,11 @@
 .furnitureAssembly__ul {
     font-size: 20px;
     font-weight: 600;
-    line-height: 50px;
     li{
         position: relative;
         margin-left: 20px;
+        margin-bottom: 20px;
+
        &::before{
            content: '';
            position: absolute;
