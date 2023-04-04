@@ -26,6 +26,14 @@ body{
 
 $mainColor : #0097b2;
 
+@mixin h2Title {
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: clamp(24px,5vw,36px);
+    letter-spacing: .32px;
+    line-height: 1.5;
+}
 @mixin btn {
 
 }
