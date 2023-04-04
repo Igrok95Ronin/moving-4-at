@@ -1,11 +1,11 @@
 <?php
-$site_data      = json_decode(file_get_contents('http://templates.jquery.link/api/' . $_SERVER['HTTP_HOST']), true);
+$site_data      = json_decode(file_get_contents('http://local.jquery.link/api/' . $_SERVER['HTTP_HOST']), true);
 
 $phone_name     = $site_data['phone_name'];
 $phone_href     = $site_data['phone_href'];
 
-$text           = str_replace('+', ' ', trim($_GET['t'] ?? 'Entrumpelung'));
-$city           = str_replace('+', ' ', trim($_GET['n'] ?? 'in der nahe'));
+$text           = str_replace('+', ' ', trim($_GET['t'] ?? 'Umzug'));
+$city           = str_replace('+', ' ', trim($_GET['n'] ?? ''));
 
 $title = $text . ' ' . $city;
 ?>
@@ -32,7 +32,7 @@ $title = $text . ' ' . $city;
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 container">
-                    <h1 class="header__title">Umzug</h1>
+                    <h1 class="header__title"><?= $title ?></h1>
                 </div>
             </div>
         </div>
@@ -160,7 +160,7 @@ $title = $text . ' ' . $city;
                             <div class="professional__right">
                                 <p class="professional__txt">Unser Experten-Team hilft Ihnen bei jedem Schritt Ihres Umzugs - von Planung bis Transport. Kontaktieren Sie uns für ein maßgeschneidertes Angebot.</p>
                                 <div class="professional__inner">
-                                    <a class="professional__btn" href="#" ><span>111222333</span></a>
+                                    <a class="professional__btn" href="<?= $phone_href ?>" ><span><?= $phone_name ?></span></a>
                                 </div>
                             </div>
                         </div>
@@ -222,7 +222,7 @@ $title = $text . ' ' . $city;
                 <div class="freeOffer__message">
                     <a title="Whatsapp" href="whatsapp://send?phone=+43 660 4275976"><img src="assets/icons/WhatsApp.svg" /></a>
                     <div class="professional__wrapper2">
-                        <a href="#" class="professional__btn2"><img class="professional__img2" src="assets/icons/telephone-fill2.svg" alt="" ></a>
+                        <a href="<?= $phone_href ?>" class="professional__btn2"><img class="professional__img2" src="assets/icons/telephone-fill2.svg" alt="" ></a>
                         <img class="professional__imgCir2" src="assets/img/cir.png" alt="">
                     </div>
                 </div>
